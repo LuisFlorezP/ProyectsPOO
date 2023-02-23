@@ -15,6 +15,6 @@ public class FamiliaArdilla {
                     " y su fortuna es de $" + padre.getFortuna());
         System.out.println("El nombre del hijo es " +
                 hijo.getNombre() + " " + hijo.getApellido() +
-                " y su fortuna es de $" + hijo.getFortuna());
+                    " y su fortuna es de $" + hijo.getFortuna());
     }
 }
