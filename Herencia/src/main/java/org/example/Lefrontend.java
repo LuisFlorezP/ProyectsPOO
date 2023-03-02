@@ -8,7 +8,7 @@ public class Lefrontend {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite la cantidad de productos: ");
+        /* System.out.print("Digite la cantidad de productos: ");
         Integer cantidadProductos = sc.nextInt();
         System.out.println("La cantidad fue: " + cantidadProductos);
 
@@ -18,7 +18,14 @@ public class Lefrontend {
         LocalDate fecha2 = LocalDate.of(2023, 2, 24);
         System.out.println(fecha2);
 
-        Long diferenciaEntreFechas = ChronoUnit.DAYS.between(fecha, fecha2);
-        System.out.println("Diferencia de fechas: " + diferenciaEntreFechas);
+        Long diferenciaEntreFechas = ChronoUnit.DAYS.between(fecha2, fecha);
+        System.out.println("Diferencia de fechas: " + diferenciaEntreFechas); */
+
+        JuiceCoctel coctel1 = new JuiceCoctel("Bebesitaaa", 250000L, LocalDate.of(2022, 2, 2));
+        System.out.println(coctel1.getFechaVencimiento());
+        System.out.println(coctel1.getFechaCreacion());
+        System.out.println(ChronoUnit.DAYS.between(coctel1.getFechaVencimiento(), coctel1.getFechaCreacion()));
+
+
     }
 }
