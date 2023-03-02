@@ -21,11 +21,12 @@ public class Lefrontend {
         Long diferenciaEntreFechas = ChronoUnit.DAYS.between(fecha2, fecha);
         System.out.println("Diferencia de fechas: " + diferenciaEntreFechas); */
 
-        JuiceCoctel coctel1 = new JuiceCoctel("Bebesitaaa", 250000L, LocalDate.of(2022, 2, 2));
-        System.out.println(coctel1.getFechaVencimiento());
+        JuiceCoctel coctel1 = new JuiceCoctel("Bebesitaaa", 250000L, LocalDate.of(2023, 3, 5));
+
+        /* System.out.println(coctel1.getFechaVencimiento());
         System.out.println(coctel1.getFechaCreacion());
-        System.out.println(ChronoUnit.DAYS.between(coctel1.getFechaVencimiento(), coctel1.getFechaCreacion()));
+        System.out.println(ChronoUnit.DAYS.between(coctel1.getFechaVencimiento(), coctel1.getFechaCreacion())); */
 
-
+        System.out.println("Total a pagar por el producto " + coctel1.getNombre() + ": $" + coctel1.calcularCosto(5));
     }
 }
