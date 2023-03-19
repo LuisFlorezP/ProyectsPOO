@@ -12,6 +12,14 @@ public class Grupo2 extends Venta{
 
     @Override
     public double totalApagar() {
-        return 0;
+        double total = this.getPrecio();
+        int cantidadDescuentos = 0;
+
+        while (total >= 500000) {
+            total -= 500000;
+            cantidadDescuentos++;
+        }
+
+        return (this.getPrecio() - (this.getPrecio() * cantidadDescuentos * this.getDescuento()));
     }
 }
