@@ -3,6 +3,7 @@ package org.example;
 public class Grupo3 extends Venta{
 
     public Grupo3() {
+        this.setDescuento(0.025);
     }
 
     public Grupo3(double precio) {
